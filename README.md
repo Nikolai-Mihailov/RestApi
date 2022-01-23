@@ -1,6 +1,5 @@
 # RestApi
-This is a small and simple rest api server which is using JWT for authorization and authentication.
-All of the sensitive data in is exposed for the test purposes only.
+This is a small and simple rest api server which is using JWT + email verification.
 
 ## Project specifications
 * Nodejs v14+
@@ -10,12 +9,12 @@ All of the sensitive data in is exposed for the test purposes only.
 
 ## Required steps to run the project:
 * Download and install Docker on your machine [Docker](https://www.docker.com/products/docker-desktop)
-* Download the project and replace the credentials from .env file whit yours
-* Open your project with VS code or other editor
-* Install all dependencies through the terminal -> npm install
-* Run npx prisma db push to generate the DB tables 
+* Download the project and create .env file in the root lavel in the project. Replace the required credentials(*) whit yours
+* Install all dependencies through the terminal -> "npm install"
+* Run "npx prisma db push" to generate the DB tables 
 * Run docker-compose up to download and run MYSQL image from docker hub
-* Run node index to run the server. 
+* Run node index to run the server
+* You will find all of the endpoints in APi.postman_collection.json
 
 
 ## .env - in root level of the project, create .env file, copy the variables below and replace the * wtih your own data.
