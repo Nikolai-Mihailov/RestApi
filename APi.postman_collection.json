@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "711130ac-8315-44f7-b94b-f5f819c297ec",
+		"name": "APi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJzZHNhZnNkZGZmZ0BhYnYuYmciLCJ1c2VybmFtZSI6ImVob2RmIiwiaWF0IjoxNjE4NDE5NzU3LCJleHAiOjE2MTg0Mjk3NTd9.0Gy3AMBCpYVEY4Ber9-iEzw-WsXUO0tcc7Q1JG3sHCQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"nikolay.nvalue@gmail.com\",\r\n    \"password\": \"Ad2ASDASD\",\r\n    \"passwordConfirmation\": \"Ad2ASDASD\",\r\n    \"firstName\": \"Ivan\",\r\n    \"lastName\": \"Ivanov\",\r\n    \"role\": 2\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7878/api/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJ1c2VyMWdAYWJ2LmJnIiwidXNlcm5hbWUiOiJ1c2VyMSIsImlhdCI6MTYxODQyMjI0NSwiZXhwIjoxNjE4NDMyMjQ1fQ.MsZSgTQ7fzJA9pPoEWfpTYZzFcOMpUgKnP1XGvN_ASs",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"nikolay.nvalue@gmail.com\",\r\n    \"password\": \"Ad2ASDASD\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7878/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "conte",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOiJJdmFuIiwibGFzdE5hbWUiOiJJdmFub3YiLCJlbWFpbCI6IjIxM2RzZkBhYnYuYmciLCJyb2xlIjoxLCJpYXQiOjE2MzYyODg1MDIsImV4cCI6MTYzNjI4OTQwMn0.4hG0nHG9GW3fq_I8l8dLgcDuDX18FFDYr8Piva-O9wY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7878/api/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAdminData",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IjIxM2RzZkBhYnYuYmciLCJpYXQiOjE2MzYzMDMwNTgsImV4cCI6MTYzNjMwMzk1OH0.XO8dVbEtv6-86v152_7MDbJVrREa2-adTBZ5qPERVY0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7878/api/user/adminData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7878",
+					"path": [
+						"api",
+						"user",
+						"adminData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
